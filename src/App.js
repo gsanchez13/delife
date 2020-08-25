@@ -45,8 +45,12 @@ const App = () => {
               <a className="btn btn-secondary" href="#">Store Signup</a>
             </div>
           </div>
+          <hr/>
         </div>
       </main>
+      <footer className="container">
+        © Pursuit Carry LLC 2020
+      </footer>
     </div>
   );
 }
