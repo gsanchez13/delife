@@ -5,7 +5,13 @@ import { Button } from './styling/styles';
 const App = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"></nav>
+      <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+      </nav>
       <main role="main">
         <div className="jumbotron bg-warning">
           <div className="container-md">
