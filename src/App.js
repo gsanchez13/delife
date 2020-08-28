@@ -1,5 +1,4 @@
 import React, { } from 'react';
-import './App.css';
 import { Button } from './styling/styles';
 
 const App = () => {
