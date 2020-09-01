@@ -6,8 +6,11 @@ const App = () => {
     <div>
       <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
+          <li className="nav-item active mr-3">
             <a href="#">About Us</a>
+          </li>
+          <li className="nav-item ml-3">
+            <a href="#">Contact Us</a>
           </li>
         </ul>
       </nav>
