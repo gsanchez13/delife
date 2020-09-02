@@ -10,10 +10,10 @@ const App = () => {
       <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active mr-3">
-            <a href="#">About Us</a>
+            <Route to="/about">About Us</Route>
           </li>
           <li className="nav-item ml-3">
-            <a href="#">Contact Us</a>
+            <Route to ="/contact">Contact Us</Route>
           </li>
         </ul>
       </nav>
