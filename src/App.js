@@ -1,6 +1,6 @@
 import React, { } from 'react';
 import { Button } from './styling/styles';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 import Landing from './Components/Landing';
 import About from './Components/About';
 
@@ -10,7 +10,7 @@ const App = () => {
       <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active mr-3">
-            <Route to="/about">About Us</Route>
+            <Link to="/about">About Us</Link>
           </li>
           <li className="nav-item ml-3">
             <Route to ="/contact">Contact Us</Route>
@@ -18,7 +18,7 @@ const App = () => {
         </ul>
       </nav>
       <Switch>
-        <Route to="/" Component={Landing}/>
+        <Route exact path="/" component={Landing}/>
       </Switch>
       <footer className="container">
         © Pursuit Carry LLC 2020
