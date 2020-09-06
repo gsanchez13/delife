@@ -12,14 +12,15 @@ const App = () => {
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active mr-3">
             <Link to="/about">About Us</Link>
+            <Link to="/contact">Contast Us</Link>
           </li>
           <li className="nav-item ml-3">
-            <Route path="/contact" component={Contact}>Contact Us</Route>
           </li>
         </ul>
       </nav>
       <Switch>
         <Route exact path="/" component={Landing}/>
+        <Route path="/contact" component={Contact}>Contact Us</Route>
       </Switch>
       <footer className="container">
         © Pursuit Carry LLC 2020
