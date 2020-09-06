@@ -10,9 +10,9 @@ const App = () => {
     <div>
       <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item active mr-3">
-            <Link to="/about">About Us</Link>
-            <Link to="/contact">Contast Us</Link>
+          <li className="nav-item">
+            <Link to="/about" className="active mr-3">About Us</Link>
+            <Link to="/contact" className=" active mr-3">Contact Us</Link>
           </li>
           <li className="nav-item ml-3">
           </li>
