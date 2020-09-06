@@ -3,6 +3,7 @@ import { Button } from './styling/styles';
 import { Switch, Route, Link } from 'react-router-dom';
 import Landing from './Components/Landing';
 import About from './Components/About';
+import Contact from './Components/Conact';
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
             <Link to="/about">About Us</Link>
           </li>
           <li className="nav-item ml-3">
-            <Route to ="/contact">Contact Us</Route>
+            <Route path="/contact" component={Contact}>Contact Us</Route>
           </li>
         </ul>
       </nav>
