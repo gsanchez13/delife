@@ -3,7 +3,7 @@ import { Button } from './styling/styles';
 import { Switch, Route, Link } from 'react-router-dom';
 import Landing from './Components/Landing';
 import About from './Components/About';
-import Contact from './Components/Conact';
+import Contact from './Components/Contact';
 
 const App = () => {
   return (
@@ -20,10 +20,11 @@ const App = () => {
       </nav>
       <Switch>
         <Route exact path="/" component={Landing}/>
-        <Route path="/contact" component={Contact}>Contact Us</Route>
+        <Route exact path="/contact" component={Contact}>Contact Us</Route>
+        <Route exact path="/about" component={About}></Route>
       </Switch>
       <footer className="container">
-        © Pursuit Carry LLC 2020
+        © Vestimox LLC 2020
       </footer>
     </div>
   );
