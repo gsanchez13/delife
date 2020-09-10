@@ -24,7 +24,7 @@ const App = () => {
         <Route exact path="/about" component={About}></Route>
       </Switch>
       <footer className="container">
-        © Vestimox LLC 2020
+        © VeloxVida LLC 2020
       </footer>
     </div>
   );
