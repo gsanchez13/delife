@@ -7,8 +7,8 @@ const Landing = () => {
             <main role="main">
                 <div className="jumbotron" style={{"backgroundColor": "#F29900", "color": "white"}}>
                     <div className="container">
-                        <h1 className="display-3 mx-auto">Welcome to Vida Veloz. </h1>
-                        <h4 className="display-5 font-weight-light"> Shop and you shall recieve. </h4>
+                        <h1 className="display-3 text-center">Welcome to Vida Veloz. </h1>
+                        <h4 className="display-5 font-weight-light text-center"> Shop and you shall recieve. </h4>
                     </div>
                 </div>
                 <div className="container mb-5">
