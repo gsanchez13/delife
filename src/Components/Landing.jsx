@@ -5,11 +5,10 @@ const Landing = () => {
     return (
         <div>
             <main role="main">
-                <div className="jumbotron bg-warning">
+                <div className="jumbotron" style={{"backgroundColor": "#F29900", "color": "white"}}>
                     <div className="container">
-                        <h1 className="display-3">Welcome to VeloxVita. </h1>
-                        <h4 className="display-5 font-weight-light"> Delivering life's luxuries, today. </h4>
-                        <p className="font-weight-light">With a focus on same day delivery for boutique fashion, beauty and homegoods, we are a platform where customers, couriers and vendors can deliver life's luxeries when they are needed. No wait, no waste, more life.</p>
+                        <h1 className="display-3 mx-auto">Welcome to Vida Veloz. </h1>
+                        <h4 className="display-5 font-weight-light"> Shop and you shall recieve. </h4>
                     </div>
                 </div>
                 <div className="container mb-5">

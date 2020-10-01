@@ -16,7 +16,7 @@ const App = () => {
       <footer className="container">
             <Link to="/about" className="active mr-3">About Us</Link>
             <Link to="/contact" className="active mr-3">Contact Us</Link>
-        © VeloxVida LLC 2020
+        © Vida Veloz LLC 2020
       </footer>
     </div>
   );
