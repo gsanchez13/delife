@@ -14,14 +14,8 @@ const App = () => {
         <Route exact path="/about" component={About} />
       </Switch>
       <footer className="container">
-      <ul className="">
-          <li className="nav-item">
             <Link to="/about" className="active mr-3">About Us</Link>
             <Link to="/contact" className="active mr-3">Contact Us</Link>
-          </li>
-          <li className="nav-item ml-3">
-          </li>
-        </ul>
         © VeloxVida LLC 2020
       </footer>
     </div>
