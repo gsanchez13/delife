@@ -14,7 +14,7 @@ const App = () => {
         <Route exact path="/about" component={About} />
       </Switch>
       <footer className="text-black my-auto py-1 px-5" style={{ "backgroundColor": "#a9a9a9" }}>
-        <div className="d-flex bd-highlight mb-3 px-3">
+        <div className="d-flex bd-highlight mb-2 px-3">
           <Link to="/about" className="mr-3 no-decoration text-dark p-2 bd-highlight">About Us</Link>
           <Link to="/contact" className="mr-3 no-decoration text-dark p-2 bd-highlight">Contact Us</Link>
           <p className="ml-auto p-2 bd-highlight">
