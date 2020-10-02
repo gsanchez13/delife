@@ -39,7 +39,7 @@ const Landing = () => {
                     <hr />
                 </div>
                 <div className="bg-dark my-auto py-1 px-5 text-light row">
-                    <div className="col-lg-6 px-3 py-4">
+                    <div className="col-lg-6 ml-n5 px-3 py-5 text-center" style={{"backgroundColor": "black"}}>
                         <h1 className="display-4"><em>About Vida Veloz</em></h1>
                     </div>
                     <div className="col-lg-6 px-3 py-4">
