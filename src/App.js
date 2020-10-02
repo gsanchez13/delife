@@ -13,11 +13,11 @@ const App = () => {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/about" component={About} />
       </Switch>
-      <footer className="text-white bg-dark my-auto py-3 px-3">
-        <div className="container">
-          <Link to="/about" className="mr-3 no-decoration text-light">About Us</Link>
-          <Link to="/contact" className="mr-3 no-decoration text-light">Contact Us</Link>
-          <p className="text-right">© Vida Veloz LLC 2020</p>
+      <footer className="text-white bg-dark my-auto py-2 px-5">
+        <div className="d-flex bd-highlight mb-3">
+          <Link to="/about" className="mr-3 no-decoration text-light p-2 bd-highlight">About Us</Link>
+          <Link to="/contact" className="mr-3 no-decoration text-light p-2 bd-highlight">Contact Us</Link>
+          <p className="ml-auto p-2 bd-highlight">© Vida Veloz LLC 2020</p>
         </div>
       </footer>
     </div>
