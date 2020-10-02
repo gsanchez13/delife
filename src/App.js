@@ -1,5 +1,4 @@
 import React, { } from 'react';
-import { Button } from './styling/styles';
 import { Switch, Route, Link } from 'react-router-dom';
 import Landing from './Components/Landing';
 import About from './Components/About';
