@@ -3,6 +3,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 import Landing from './Components/Landing';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai';
 
 const App = () => {
   return (
@@ -16,7 +17,19 @@ const App = () => {
         <div className="d-flex bd-highlight mb-3">
           <Link to="/about" className="mr-3 no-decoration text-light p-2 bd-highlight">About Us</Link>
           <Link to="/contact" className="mr-3 no-decoration text-light p-2 bd-highlight">Contact Us</Link>
-          <p className="ml-auto p-2 bd-highlight">© Vida Veloz LLC 2020</p>
+          <p className="ml-auto p-2 bd-highlight">
+            Follow Us:
+          <a href="#" target="_blank" rel="noopener noreferrer"> {" "}
+              <AiOutlineInstagram style={{ "color": "white" }} size={20}/>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer"> {" "}
+              <AiOutlineLinkedin style={{ "color": "white" }} size={20}/>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer"> {" "}
+              <AiOutlineTwitter style={{ "color": "white" }} size={20}/>
+            </a>
+            <br/>
+            © Vida Veloz LLC 2020</p>
         </div>
       </footer>
     </div>
