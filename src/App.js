@@ -13,7 +13,7 @@ const App = () => {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/about" component={About} />
       </Switch>
-      <div className="text-black mx-n5 my-auto py-1 px-5" style={{ "backgroundColor": "#a9a9a9" }}>
+      <div className="text-black my-auto py-1 px-5" style={{ "backgroundColor": "#a9a9a9" }}>
         <div className="d-flex bd-highlight mb-2 px-3 mx-5">
           <Link to="/about" className="mr-3 no-decoration text-dark p-2 bd-highlight">About Us</Link>
           <Link to="/contact" className="mr-3 no-decoration text-dark p-2 bd-highlight">Contact Us</Link>
