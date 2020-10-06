@@ -38,16 +38,16 @@ const Landing = () => {
                     </div>
                     <hr />
                 </div>
-                <div className="bg-dark my-auto py-1 px-5 text-light row">
-                    <div className="col-lg-6 ml-n5 px-3 py-5 text-center" style={{"backgroundColor": "black"}}>
+            </main>
+            <div className="row no-gutters py-1 px-5 text-light">
+                    <div className="col-lg-6 py-5 px-5 text-center" style={{"backgroundColor": "black"}}>
                         <h1 className="display-4"><em>About Vida Veloz</em></h1>
                     </div>
-                    <div className="col-lg-6 px-3 py-4">
+                    <div className="col-lg-6 py-5 px-5 bg-dark ">
                     <em>Vida Veloz </em>helps you find and order clothes, beauty products, and everyday essentials near you. <br/>
                     How it works: You share your location or type in your zipcode, we tell you the stores near you that deliver to your address. When you find what you're looking for, you can place your order online and we’ll make sure you receive your order by the end of the day.
                     </div>
-                    </div>
-            </main>
+                </div>
         </div>
     )
 };
