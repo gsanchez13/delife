@@ -19,7 +19,7 @@ const App = () => {
           <Link to="/contact" className="mr-3 no-decoration text-dark p-2 bd-highlight">Contact Us</Link>
           <p className="ml-auto p-2 bd-highlight">
             Follow Us:
-          <a href="#" target="_blank" rel="noopener noreferrer"> {" "}
+          <a href="https://www.instagram.com/shopvidaveloz/" target="_blank" rel="noopener noreferrer"> {" "}
               <AiFillInstagram style={{ "color": "black" }} size={20} />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer"> {" "}
