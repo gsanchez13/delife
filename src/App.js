@@ -7,7 +7,7 @@ import { AiFillInstagram, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/a
 
 const App = () => {
   return (
-    <div>
+    <div className="container-fluid">
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route exact path="/contact" component={Contact} />
