@@ -13,13 +13,15 @@ const Landing = () => {
                 </div>
                 <div className="container mb-5">
                     <div className="row">
-                        <div className="col-lg-6">
-                            <h3>Order fashion favroites from stores near you</h3>
+                        <div className="col-lg-6 mx-auto">
+                            <h3>Order fashion favorite from stores near you.</h3>
                             <p>Experience online shopping at your door.</p>
                         </div>
-                        <div className="col-log-6">
-
+                        <div className="col-log-5 mx-auto">
+                        <img src="https://img.icons8.com/wired/64/000000/shopping-bag-full.png" style={{"height": "100px"}}/>
                         </div>
+                    </div>
+                    <div className="row">
                         <div className="col-lg-4 mt-3">
                             <h3>Customer Signup</h3>
                             <p className="font-weight-light">
