@@ -13,6 +13,13 @@ const Landing = () => {
                 </div>
                 <div className="container mb-5">
                     <div className="row">
+                        <div className="col-lg-6">
+                            <h3>Order fashion favroites from stores near you</h3>
+                            <p>Experience online shopping at your door.</p>
+                        </div>
+                        <div className="col-log-6">
+
+                        </div>
                         <div className="col-lg-4 mt-3">
                             <h3>Customer Signup</h3>
                             <p className="font-weight-light">
