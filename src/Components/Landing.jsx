@@ -14,8 +14,8 @@ const Landing = () => {
                 <div className="container mb-5">
                     <div className="row">
                         <div className="col-lg-6 text-center my-5 mx-auto px-auto pb-6">
-                            <p className="h4 lead">Order fashion favorites from stores near you.<br/></p>
-                            <p className="">Experience online shopping at your door.</p>
+                            <p className="h3 lead font-weight-bold">Order fashion favorites from stores near you.<br/></p>
+                            <p className="font-italic">Experience online shopping at your door.</p>
                         </div>
                         <div className="col-log-4 text-center my-auto mx-auto">
                             <img src="/shoppingbags.png" height="100px"/>
@@ -24,16 +24,16 @@ const Landing = () => {
                     <div className="row mb-5">
                         <div className="col-lg-4 text-center">
                         <img src="https://img.icons8.com/dusk/100/000000/shopping-bag.png"/><br/>
-                            <Link className="btn btn-secondary" to="/auth" role="button">Sign up to Shop</Link>
+                            <Link className="btn btn-secondary" to="/auth" style={{"backgroundColor": "#F29900"}} >Sign up to Shop</Link>
                         </div>
                         <br />
                         <div className="col-lg-4 text-center">
                         <img src="https://img.icons8.com/officel/100/000000/scooter.png"/><br/>
-                            <Link className="btn btn-secondary" to="/auth">Signup to be a Courier</Link>
+                            <Link className="btn btn-secondary" to="/auth" style={{"backgroundColor": "#F29900"}}>Signup to be a Courier</Link>
                         </div>
                         <div className="col-lg-4 text-center">
                             <img src="https://img.icons8.com/clouds/100/000000/online-shop-shopping-bag.png"/><br/>
-                            <Link className="btn btn-secondary" to="/auth">Partner With Us</Link>
+                            <Link className="btn btn-secondary" to="/auth" style={{"backgroundColor": "#F29900"}}>Partner With Us</Link>
                         </div>
                     </div>
                     <hr />
