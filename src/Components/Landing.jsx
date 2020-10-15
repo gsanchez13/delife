@@ -32,11 +32,10 @@ const Landing = () => {
                             <Link className="btn btn-secondary" to="/auth" style={{"backgroundColor": "#F29900"}}>Signup to be a Courier</Link>
                         </div>
                         <div className="col-lg-4 text-center">
-                            <img src="https://img.icons8.com/clouds/100/000000/online-shop-shopping-bag.png"/><br/>
+                            <img className="img-fluid rounded-circle" src="https://img.icons8.com/clouds/100/000000/online-shop-shopping-bag.png"/><br/>
                             <Link className="btn btn-secondary" to="/auth" style={{"backgroundColor": "#F29900"}}>Partner With Us</Link>
                         </div>
                     </div>
-                    <hr />
                 </div>
             </main>
             <div className="row mx-auto text-light">
