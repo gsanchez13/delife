@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+let [ email, setEmail ] = useState("");
 
 const Landing = () => {
     return (
