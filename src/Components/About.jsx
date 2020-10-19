@@ -2,28 +2,39 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const About = () => {
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        console.log('button clicked')
+      }
   return (
     <div className="main">
-      <div class= 'Navigation-Bar'>
-      <nav class="navbar navbar-light  bg-light" >
-      {/* navbar navbar-expand navbar-light fixed-top bg-light */}
-        <Link to = '/' class="navbar-brand" href="#">
+      <div className= 'Navigation-Bar'>
+      <nav className="navbar navbar-expand navbar-light fixed-top bg-light" 
+      style ={{opacity:'.9'}} 
+    //  navbar navbar-expand navbar-light fixed-top bg-light" 
+      >
+      {/* "navbar navbar-light  bg-light" */}
+  
+        <button onClick={topFunction} style={{border:'none'}}>
           <img
             src="/OrangeIcon.png"
             width="30"
             height="30"
             class="d-inline-block align-top"
-            alt=""
+            alt="An orange."
+            onClick={topFunction} 
           />
-        </Link>
+          </button>
+     
       </nav>
       </div>
 
       <div
         className="jumbotron"
-        style={{ backgroundColor: "#F29900", color: "white" }}
+        style={{ backgroundColor: "#F29900", color: "white", marginBottom:'0px' }}
       >
-        <div className="container">
+        <div className="container" styl={{marginBotttom:'0px'}}>
           <h1
             className="display-3 text-center"
             style={{ fontFamily: "Baskervville", fontSize: "90px" }}
@@ -39,20 +50,24 @@ const About = () => {
         </div>
       </div>
 
-      <div className='Container-Mission'> 
-      <div class="jumbotron jumbotron-fluid" style={{backgroundColor:'white'}}>
+      
+      <div className="jumbotron jumbotron-fluid text-center" style={{backgroundColor:'white'}}>
   <div class="container">
     <h1 class="display-4" style ={{fontFamily: "Baskervville", color:'#F29900'}}>Our Mission</h1>
-    <p class="lead" style ={{fontFamily:'Playfair display'}}>is to provide the consumer the best curated alternative online and offline shopping experience. Integrating technology, luxury customer service, and sustainable practices to satisfy customer expectations. VidaVeloz will be an innovative and transformative solution to fill the gaps in the luxury fashion industry. Through our revolutionary app, VidaVeloz can deliver nearly anything from your favorite local boutique or retailer to you within hours. </p>
+    <p class="lead" style ={{fontFamily:'Playfair display'}}>is to provide the consumer the best curated alternative online and offline shopping experience. Integrating technology, luxury customer service, and sustainable practices to satisfy customer expectations. VidaVeloz will be an innovative and transformative solution to fill the gaps in the luxury fashion industry. Through our revolutionary app, VidaVeloz can deliver nearly anything from your favorite local boutique or retailer to you within hours. Fashion at your door today. </p>
   </div>
-</div>
+
       </div>
 
 
+      <div class="jumbotron jumbotron-fluid " style ={{color:'#C44B3C', backgroundColor:'white', textAlign:'center'}}>
+  <div class="container">
+    <h1 class="display-4" style ={{fontFamily:'Baskervville'}}>Meet the Women behind Vida Veloz</h1>
+  </div>
+</div>
 
 
-
-<section>
+{/* <section>
 <div class="container">
  
     <div className='col-lg-6  my-5  px-auto '>
@@ -67,7 +82,12 @@ const About = () => {
 </div>
 
 </div>
-</section>
+</section> */}
+
+
+
+
+
 </div>
   );
 };
