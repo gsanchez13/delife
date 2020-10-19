@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="main">
-      <nav class="navbar navbar-light bg-light">
+      <div class= 'Navigation-Bar'>
+      <nav class="navbar navbar-light  bg-light" >
+      {/* navbar navbar-expand navbar-light fixed-top bg-light */}
         <Link to = '/' class="navbar-brand" href="#">
           <img
             src="/OrangeIcon.png"
@@ -15,6 +17,7 @@ const About = () => {
           />
         </Link>
       </nav>
+      </div>
 
       <div
         className="jumbotron"
@@ -35,12 +38,19 @@ const About = () => {
           </h4>
         </div>
       </div>
+
       <div className='Container-Mission'> 
-      <div>
-
+      <div class="jumbotron jumbotron-fluid" style={{backgroundColor:'white'}}>
+  <div class="container">
+    <h1 class="display-4" style ={{fontFamily: "Baskervville", color:'#F29900'}}>Our Mission</h1>
+    <p class="lead" style ={{fontFamily:'Playfair display'}}>is to provide the consumer the best curated alternative online and offline shopping experience. Integrating technology, luxury customer service, and sustainable practices to satisfy customer expectations. VidaVeloz will be an innovative and transformative solution to fill the gaps in the luxury fashion industry. Through our revolutionary app, VidaVeloz can deliver nearly anything from your favorite local boutique or retailer to you within hours. </p>
+  </div>
+</div>
       </div>
 
-      </div>
+
+
+
 
 <section>
 <div class="container">
