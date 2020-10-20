@@ -13,7 +13,7 @@ const Landing = () => {
                         <h4 className="display-5 font-weight-light text-center"><em>Delivering life's luxuries, today.</em></h4>
                     </div>
                 </div>
-                <div className="row mx-auto">
+                <div className="row mx-auto my-auto">
                     <div className="col-lg-6 py-5 px-5 pl-3 text-center" style={{ "backgroundColor": "#C44B3C" }}>
                         <h1 className="display-4 text-light">About <br/><em>Vida Veloz</em></h1>
                     </div>
@@ -24,7 +24,7 @@ const Landing = () => {
                 </div>
                 <div className="container mx-auto my-auto">
                     <div className="row mx-auto my-auto">
-                        <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
+                        <div className="carousel slide mx-auto" data-ride="carousel">
                             <ol className="carousel-indicators">
                                 <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
                                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -35,7 +35,6 @@ const Landing = () => {
                                     <img src="https://img.icons8.com/dusk/100/000000/shopping-bag.png" className="d-block w-100" alt="..."/>
                                         <div className="carousel-caption d-none d-md-block">
                                             <h5>Shop with us</h5>
-                                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                         </div>
                                 </div>
                             </div>
