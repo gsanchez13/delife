@@ -7,8 +7,8 @@ const Landing = () => {
     const changeEmail = (e) => {
         setEmail(e.target.value);
     };
-    const checkValid = (e) => {
-        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(e.target.value)) {
+    const checkValid = (email) => {
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
             console.log("valid email")
         }
         console.log("invalid email")
@@ -43,27 +43,30 @@ const Landing = () => {
                         How it works: You share your location or type in your zipcode, we tell you the stores near you that deliver to your address. When you find what you're looking for, you can place your order online and we’ll make sure you receive your order by the end of the day.
                     </div>
                     <div className="col-lg-6 my-5 py-5 mx-auto">
-                        <input type="text" 
-                        style={{
-                            "background": "transparent",
-                            "border": "none",
-                            "borderBottom": "1px solid #000000",
-                            "webkitBoxShadow": "none",
-                            "boxShadow": "none",
-                            "borderRadius": "0",
-                            "width": "70%",
-                            "display": "inlineBlock"
-                        }}  
-                        value={email}
-                            onChange={changeEmail}
-                            placeholder="My email address" />
-                        <button type="submit"
-                            className="btn text-light ml-3"
-                            style={{ "backgroundColor": "#F29900",
-                                     "display": "inlineBlock"
-                                    }}
-                            onSubmit={checkValid}>
-                            Submit</button>
+                        <form submit={checkValid}>
+                            <input type="text mx-auto"
+                                style={{
+                                    "background": "transparent",
+                                    "border": "none",
+                                    "borderBottom": "1px solid #000000",
+                                    "webkitBoxShadow": "none",
+                                    "boxShadow": "none",
+                                    "borderRadius": "0",
+                                    "width": "70%",
+                                    "display": "inlineBlock"
+                                }}
+                                value={email}
+                                onChange={changeEmail}
+                                placeholder="My email address" />
+                            <button type="button"
+                                className="btn text-light ml-3"
+                                style={{
+                                    "backgroundColor": "#F29900",
+                                    "display": "inlineBlock"
+                                }}
+                                onSubmit={checkValid}>
+                                Submit</button>
+                        </form>
                     </div>
                 </div>
             </main>
