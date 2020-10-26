@@ -125,13 +125,32 @@ const About = () => {
 
 
 
-
-
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Third slide"/>
+      <div class="carousel-caption ">
+    <h5>Giselle Sanchez </h5>
+    <p> Backround in finance and accouting. Speaks five languages and loves to code.  </p>
+    </div>
+    </div>
+  
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Third slide"/>
+      <div class="carousel-caption ">
+    <h5>Briany Taveras </h5>
+    <p> Backround in finance and accouting. Speaks five languages and loves to code.  </p>
+    </div>
+    </div>
 
     <div class="carousel-item">
       <img class="d-block w-100" src="..." alt="Third slide"/>
+      <div class="carousel-caption ">
+    <h5>Aransa Garcia</h5>
+    <p> Backround in finance and accouting. Speaks five languages and loves to code.  </p>
     </div>
-  </div>
+    </div>
+    </div>
+
+  
 
 
 
