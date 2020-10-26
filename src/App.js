@@ -7,7 +7,7 @@ import { AiFillInstagram, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/a
 
 const App = () => {
   return (
-    <div>
+    <div style={{"fontFamily": "baskervvile"}}>
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route exact path="/contact" component={Contact} />
