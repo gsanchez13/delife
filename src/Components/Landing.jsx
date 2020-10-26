@@ -7,6 +7,12 @@ const Landing = () => {
     const changeEmail = (e) => {
         setEmail(e.target.value);
     };
+    const checkValid = (e) => {
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(e.target.value)) {
+            console.log("valid email")
+        }
+        console.log("invalid email")
+    };
     return (
         <div>
             <main role="main">
@@ -18,15 +24,15 @@ const Landing = () => {
                 </div>
                 <div className="row mx-auto my-auto">
                     <div className="col-lg-3 my-5 mx-auto text-center py-2">
-                        <img alt="shopping bags"src="/bags.svg" style={{ "height": "150px" }} />
+                        <img alt="shopping bags" src="/bags.svg" style={{ "height": "150px" }} />
                         <p className="mt-3">Shop With Us</p>
                     </div>
                     <div className="col-lg-3 my-auto mx-auto text-center">
-                        <img alt="bike"src="/bike.svg" style={{ "height": "150px" }} />
+                        <img alt="bike" src="/bike.svg" style={{ "height": "150px" }} />
                         <p className="mt-3">Deliver Luxuries</p>
                     </div>
                     <div className="col-lg-3 my-auto mx-auto text-center">
-                        <img alt="storefront"src="/store.svg" style={{ "height": "150px" }} />
+                        <img alt="storefront" src="/store.svg" style={{ "height": "150px" }} />
                         <p className="mt-3">Partner With Us</p>
                     </div>
                     <div className="col-lg-6 py-3 px-5 pl-3 text-center" style={{ "backgroundColor": "#C44B3C" }}>
@@ -37,17 +43,27 @@ const Landing = () => {
                         How it works: You share your location or type in your zipcode, we tell you the stores near you that deliver to your address. When you find what you're looking for, you can place your order online and we’ll make sure you receive your order by the end of the day.
                     </div>
                     <div className="col-lg-6 my-5 py-5 mx-auto">
-                        <input type="text" style={{
+                        <input type="text" 
+                        style={{
                             "background": "transparent",
                             "border": "none",
                             "borderBottom": "1px solid #000000",
                             "webkitBoxShadow": "none",
                             "boxShadow": "none",
                             "borderRadius": "0",
-                            "width": "100%"
-                        }}
+                            "width": "70%",
+                            "display": "inlineBlock"
+                        }}  
                         value={email}
-                        onChange={changeEmail}></input>
+                            onChange={changeEmail}
+                            placeholder="My email address" />
+                        <button type="submit"
+                            className="btn text-light ml-3"
+                            style={{ "backgroundColor": "#F29900",
+                                     "display": "inlineBlock"
+                                    }}
+                            onSubmit={checkValid}>
+                            Submit</button>
                     </div>
                 </div>
             </main>
