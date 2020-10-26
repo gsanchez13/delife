@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 
 
 const Landing = () => {
-    // let [email, setEmail] = useState("");
+    let [email, setEmail] = useState("");
+    const changeEmail = (e) => {
+        setEmail(e.target.value);
+    };
     return (
         <div>
             <main role="main">
@@ -15,16 +18,16 @@ const Landing = () => {
                 </div>
                 <div className="row mx-auto my-auto">
                     <div className="col-lg-3 my-5 mx-auto text-center py-2">
-                        <img src="/bags.svg" style={{ "height": "150px" }} />
-                        <p className="mt-3">Shop with us</p>
+                        <img alt="shopping bags"src="/bags.svg" style={{ "height": "150px" }} />
+                        <p className="mt-3">Shop With Us</p>
                     </div>
                     <div className="col-lg-3 my-auto mx-auto text-center">
-                        <img src="/bike.svg" style={{ "height": "150px" }} />
+                        <img alt="bike"src="/bike.svg" style={{ "height": "150px" }} />
                         <p className="mt-3">Deliver Luxuries</p>
                     </div>
                     <div className="col-lg-3 my-auto mx-auto text-center">
-                        <img src="/store.svg" style={{ "height": "150px" }} />
-                        <p className="mt-3">Partner with us</p>
+                        <img alt="storefront"src="/store.svg" style={{ "height": "150px" }} />
+                        <p className="mt-3">Partner With Us</p>
                     </div>
                     <div className="col-lg-6 py-3 px-5 pl-3 text-center" style={{ "backgroundColor": "#C44B3C" }}>
                         <h1 className="display-4 text-light">About <br /><em>Vida Veloz</em></h1>
@@ -42,7 +45,9 @@ const Landing = () => {
                             "boxShadow": "none",
                             "borderRadius": "0",
                             "width": "100%"
-                        }}></input>
+                        }}
+                        value={email}
+                        onChange={changeEmail}></input>
                     </div>
                 </div>
             </main>
