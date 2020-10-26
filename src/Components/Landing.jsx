@@ -3,7 +3,16 @@ import { Link } from 'react-router-dom';
 
 
 const Landing = () => {
-    // let [email, setEmail] = useState("");
+    let [email, setEmail] = useState("");
+    const changeEmail = (e) => {
+        setEmail(e.target.value);
+    };
+    const checkValid = (email) => {
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+            console.log("valid email")
+        }
+        console.log("invalid email")
+    };
     return (
         <div>
             <main role="main">
@@ -14,66 +23,55 @@ const Landing = () => {
                     </div>
                 </div>
                 <div className="row mx-auto my-auto">
-                    <div className="col-lg-6 py-5 px-5 pl-3 text-center" style={{ "backgroundColor": "#C44B3C" }}>
-                        <h1 className="display-4 text-light">About <br/><em>Vida Veloz</em></h1>
+                    <div className="col-lg-3 my-5 mx-auto text-center py-2">
+                        <img alt="shopping bags" src="/bags.svg" style={{ "height": "150px" }} />
+                        <p className="mt-3">Shop With Us</p>
                     </div>
-                    <div className="col-lg-6 py-5 px-5 pl-3" style={{ "backgroundColor": "#EFDDD0" }}>
+                    <div className="col-lg-3 my-auto mx-auto text-center">
+                        <img alt="bike" src="/bike.svg" style={{ "height": "150px" }} />
+                        <p className="mt-3">Deliver Luxuries</p>
+                    </div>
+                    <div className="col-lg-3 my-auto mx-auto text-center">
+                        <img alt="storefront" src="/store.svg" style={{ "height": "150px" }} />
+                        <p className="mt-3">Partner With Us</p>
+                    </div>
+                    <div className="col-lg-6 py-3 px-5 pl-3 text-center" style={{ "backgroundColor": "#C44B3C" }}>
+                        <h1 className="display-4 text-light">About <br /><em>Vida Veloz</em></h1>
+                    </div>
+                    <div className="col-lg-6 py-3 px-5 pl-3 text-center" style={{ "backgroundColor": "#EFDDD0" }}>
                         <em>Vida Veloz </em>helps you find and order clothes, beauty products, and everyday essentials near you. <br />
                         How it works: You share your location or type in your zipcode, we tell you the stores near you that deliver to your address. When you find what you're looking for, you can place your order online and we’ll make sure you receive your order by the end of the day.
                     </div>
-                </div>
-                <div className="container mx-auto my-auto">
-                    <div className="row mx-auto my-auto">
-                        <div className="carousel slide mx-auto" data-ride="carousel">
-                            <ol className="carousel-indicators">
-                                <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
-                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                            </ol>
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <img src="https://img.icons8.com/dusk/100/000000/shopping-bag.png" className="d-block w-100" alt="..."/>
-                                        <div className="carousel-caption d-none d-md-block">
-                                            <h5>Shop with us</h5>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="col-lg-6 my-5 py-5 mx-auto">
+                        <form submit={checkValid}>
+                            <input type="text mx-auto"
+                                style={{
+                                    "background": "transparent",
+                                    "border": "none",
+                                    "borderBottom": "1px solid #000000",
+                                    "webkitBoxShadow": "none",
+                                    "boxShadow": "none",
+                                    "borderRadius": "0",
+                                    "width": "70%",
+                                    "display": "inlineBlock"
+                                }}
+                                value={email}
+                                onChange={changeEmail}
+                                placeholder="My email address" />
+                            <button type="button"
+                                className="btn text-light ml-3"
+                                style={{
+                                    "backgroundColor": "#F29900",
+                                    "display": "inlineBlock"
+                                }}
+                                onSubmit={checkValid}>
+                                Submit</button>
+                        </form>
                     </div>
                 </div>
-                        {/* <div className="container mb-5">
-                    <div className="row">
-                        <div className="col-lg-6 text-center my-5 mx-auto px-auto pb-6">
-                            <p className="h3 lead font-weight-bold">Order fashion favorites from stores near you.<br /></p>
-                            <p className="font-italic">Experience online shopping at your door.</p>
-                        </div>
-                        <div className="col-log-4 text-center my-auto mx-auto">
-                            <img src="/shoppingbags.png" height="100px" />
-                        </div>
-                    </div>
-                    <div className="row mx-auto text-center">
-                        <div className="col-lg-7 text-left" style={{ "backgroundColor": "grey" }}>
-                            <p className="card-header">Shop with Us</p>
-                            <img style={{ "backgroundColor": "white" }} src="https://img.icons8.com/dusk/100/000000/shopping-bag.png" className="img-fluid rounded-circle px-auto py-auto" alt="..." />
-                        </div>
-                        <br />
-                        <div className="col-lg-7 text-right" style={{ "backgroundColor": "grey" }}>
-                            <p className="card-header">Become a Partner</p>
-                            <img style={{ "backgroundColor": "white" }} src="https://img.icons8.com/officel/100/000000/scooter.png" className="img-fluid rounded-circle px-auto py-auto" alt="..." />
-                        </div>
-                        <div className="col-lg-7 text-left" style={{ "backgroundColor": "grey" }}>
-                            <p className="card-header">Become a Partner</p>
-                            <img style={{ "backgroundColor": "white" }} src="https://img.icons8.com/clouds/100/000000/online-shop-shopping-bag.png" className="img-fluid rounded-circle px-auto py-auto" alt="..." />
-                        </div>
-                        <div className="col-lg-4 input-group mx-auto my-3">
-                            <input type="text" className="form-control" placeholder="Email" aria-describedby="basic-addon2">
-                            </input>
-                        </div>
-                    </div>
-                </div> */}
             </main>
-                </div >
-                )
-            };
-            
+        </div >
+    )
+};
+
 export default Landing;
