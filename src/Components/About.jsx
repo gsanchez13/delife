@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 const About = () => {
   function topFunction() {
@@ -113,7 +113,6 @@ const About = () => {
   </div>
     </div>
 
-
     <div class="carousel-item">
       <img class="d-block w-100" src="Kathy-Puma.jpg" alt="Second slide"/>
 
@@ -151,11 +150,6 @@ const About = () => {
     </div>
 
   
-
-
-
-
-
   <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -164,7 +158,6 @@ const About = () => {
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-
 </div>
 
 </section>
