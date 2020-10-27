@@ -1,19 +1,43 @@
 import React, { useState } from 'react';
 
 const Landing = () => {
-    let [email, setEmail] = useState("");
+    let [email, setEmail] = useState({
+        emailStr: "",
+        emailValid: null
+    });
     const changeEmail = (e) => {
-        setEmail(e.target.value);
+        setEmail({ ...email, emailStr: e.target.value });
     };
     const checkValid = (e) => {
         e.preventDefault();
-        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
-            console.log("valid email")
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email.emailStr)) {
+            setEmail({ ...email, emailValid: true })
         }
-        else{
-        console.log("invalid email")
+        else {
+            setEmail({ ...email, emailValid: false })
         }
     };
+    const alertType = () => {
+        if(email.emailValid === null){
+            return(
+                <div></div>
+            )
+        }
+        else if (email.emailValid) {
+            return (
+                <div className="alert alert-success mt-1">
+                    Thanks for signing up! We'll send you an email once our 1.0 version is delivering!
+            </div>
+            )
+        }
+        else {
+            return (
+                <div className="alert alert-danger mt-1">
+                    Invalid email input
+            </div>
+            )
+        }
+    }
     return (
         <div>
             <main role="main">
@@ -55,7 +79,19 @@ const Landing = () => {
                         <em>Vida Veloz </em>helps you find and order clothes, beauty products, and everyday essentials near you. <br />
                         How it works: You share your location or type in your zipcode, we tell you the stores near you that deliver to your address. When you find what you're looking for, you can place your order online and we’ll make sure you receive your order by the end of the day.
                     </div>
-                    <div className="col-lg-6 my-5 py-5 mx-auto">
+                    <div className="col-lg-12 mt-3 text-center">
+                        <em>
+                            <p className="display-4" style={{ "display": "inline", "color": "#F29900" }}>V</p>
+                            <p className="display-4" style={{ "display": "inline", "color": "#F29900" }}>ida</p>
+                            <p className="display-4" style={{ "display": "inline", "color": "#F29900" }}>V</p>
+                            <p className="display-4" style={{ "display": "inline", "color": "#F29900" }}>eloz</p>
+                            <img src="/OrangeIcon.png" alt="orange" className="ml-5 mr-3" style={{ "display": "inline", "height": "50px" }} />
+                            <p className="display-4" style={{ "display": "inline" }}>Coming Soon</p>
+                            <br />
+                            <p className="display-5">Sign up to recieve updates about our app launch.</p>
+                        </em>
+                    </div>
+                    <div className="col-lg-6 my-3 py-5 mx-auto">
                         <form onSubmit={checkValid} className="text-center">
                             <input
                                 type="text mx-auto"
@@ -69,7 +105,7 @@ const Landing = () => {
                                     "width": "70%",
                                     "display": "inline"
                                 }}
-                                value={email}
+                                value={email.emailStr}
                                 onChange={changeEmail}
                                 placeholder="My email address" />
                             <button
@@ -82,6 +118,7 @@ const Landing = () => {
                                 onSubmit={checkValid}>
                                 Submit</button>
                         </form>
+                        {alertType()}
                     </div>
                 </div>
             </main>
