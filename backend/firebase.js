@@ -14,9 +14,12 @@ const serviceAccount = {
   client_x509_cert_url: process.env.CLIENT_X509_CERT_URL
 };
 
+
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://fir-369dd.firebaseio.com"
+  databaseURL: "https://vidaveloz-fce6c.firebaseio.com"
 });
+
+
 
 module.exports = admin;
