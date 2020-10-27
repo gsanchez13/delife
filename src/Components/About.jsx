@@ -9,8 +9,9 @@ const About = () => {
   }
   return (
     <div className="main">
+      <main>
       <div className="navigation-Bar">
-        <nav className="navbar navbar-light bg-light" style={{ opacity: ".9" }}>
+        <nav className="navbar navbar-expand navbar-light fixed-top bg-light" style={{ opacity: ".9" }}>
           <button onClick={topFunction} style={{ border: "none" }}>
             <img
               src="/OrangeIcon.png"
@@ -304,6 +305,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      </main>
     </div>
   );
 };
