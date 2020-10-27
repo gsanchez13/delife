@@ -11,7 +11,7 @@ const About = () => {
     <div className="main">
       <main>
       <div className="navigation-Bar">
-        <nav className="navbar navbar-expand navbar-light fixed-top bg-light" style={{ opacity: ".9" }}>
+        <nav className="navbar navbar-light bg-light" style={{ opacity: ".9" }}>
           <button onClick={topFunction} style={{ border: "none" }}>
             <img
               src="/OrangeIcon.png"
@@ -213,8 +213,9 @@ const About = () => {
         </div>
       </section> */}
 
+<section>
       <div className="container mb-5 ">
-        <div className="row ">
+        <div className="row align-items-center ">
           <div className="col-log-5 text-center my-auto mx-auto py-auto">
             <img src="isa.jpg" height="100%" style={{ borderRadius: "50%" }} />
           </div>
@@ -234,8 +235,15 @@ const About = () => {
             </p>
           </div>
         </div>
+</div>
+</section>
+<section>
+      <div className="container mb-5 ">
         <div className="row my-20px">
-        <div className="col-lg-7 text-center my-5 mx-auto px-auto pb-6">
+       <div className="col-log-5 order-lg-2 text-center my-auto mx-auto">
+            <img src="Kathy-Puma.jpg" height="250px" style={{ borderRadius: "50%" }} />
+          </div>    
+          <div className="col-lg-7 text-center order-lg-1 my-5 mx-auto px-auto pb-6">
             <p className="h3 lead font-weight-bold">
               {" "}
               Kathy Puma
@@ -247,11 +255,12 @@ const About = () => {
               loves to code.
             </p>
           </div>
-          <div className="col-log-5 text-center my-auto mx-auto">
-            <img src="Kathy-Puma.jpg" height="250px" style={{ borderRadius: "50%" }} />
-          </div>
+       
         </div>
-
+</div>
+</section>
+<section>
+      <div className="container mb-5 ">
         <div className="row">
           <div className="col-log-5 text-center my-auto mx-auto">
             <img src="Giselle-Sanchez.jpg" height="250px" style={{ borderRadius: "50%" }} />
@@ -269,9 +278,16 @@ const About = () => {
             </p>
           </div>
         </div>
+        </div>
+        </section>
 
+        <section>
+      <div className="container mb-5 ">
         <div className="row">
-        <div className="col-lg-7 text-center my-5 mx-auto px-auto pb-6">
+        <div className="col-log-5 order-lg-2 text-center my-auto mx-auto">
+            <img src="Briany-Taveras.jpg" height="250px" style={{ borderRadius: "50%" }} />
+          </div>
+           <div className="col-lg-7 order-lg-1 text-center my-5 mx-auto px-auto pb-6">
             <p className="h3 lead font-weight-bold">
               {" "}
               Briany Taveras
@@ -282,11 +298,13 @@ const About = () => {
               Background in Psychology and International Studies. Loves to travel, etc, etc. 
             </p>
           </div>
-          <div className="col-log-5 text-center my-auto mx-auto">
-            <img src="Briany-Taveras.jpg" height="250px" style={{ borderRadius: "50%" }} />
-          </div>
+       
         </div>
+        </div>
+        </section>
 
+        <section>
+      <div className="container mb-5 ">
         <div className="row">
           <div className="col-log-5 text-center my-auto mx-auto">
             <img src="Aransa-Garcia.jpg" height="250px" style={{ borderRadius: "50%" }} />
@@ -304,7 +322,8 @@ const About = () => {
             </p>
           </div>
         </div>
-      </div>
+        </div>
+        </section>
       </main>
     </div>
   );
