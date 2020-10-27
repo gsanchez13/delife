@@ -217,7 +217,7 @@ const About = () => {
       <div className="container mb-5 ">
         <div className="row align-items-center ">
           <div className="col-log-5 text-center my-auto mx-auto py-auto">
-            <img src="isa.jpg" height="100%" style={{ borderRadius: "50%" }} />
+            <img src="isa.jpg" height="100%" style={{ borderRadius: "50%"}} alt=" Isabella Montoya." />
           </div>
 
           <div className="col-lg-7 text-center my-5 mx-auto px-auto pb-6">
@@ -241,7 +241,7 @@ const About = () => {
       <div className="container mb-5 ">
         <div className="row my-20px">
        <div className="col-log-5 order-lg-2 text-center my-auto mx-auto">
-            <img src="Kathy-Puma.jpg" height="250px" style={{ borderRadius: "50%" }} />
+            <img src="Kathy-Puma.jpg" height="250px" style={{ borderRadius: "50%" }}  alt="Kathy Puma." />
           </div>    
           <div className="col-lg-7 text-center order-lg-1 my-5 mx-auto px-auto pb-6">
             <p className="h3 lead font-weight-bold">
@@ -263,7 +263,7 @@ const About = () => {
       <div className="container mb-5 ">
         <div className="row">
           <div className="col-log-5 text-center my-auto mx-auto">
-            <img src="Giselle-Sanchez.jpg" height="250px" style={{ borderRadius: "50%" }} />
+            <img src="Giselle-Sanchez.jpg" height="250px" style={{ borderRadius: "50%" }} alt="Giselle Sanchez." />
           </div>
 
           <div className="col-lg-7 text-center my-5 mx-auto px-auto pb-6">
@@ -285,7 +285,7 @@ const About = () => {
       <div className="container mb-5 ">
         <div className="row">
         <div className="col-log-5 order-lg-2 text-center my-auto mx-auto">
-            <img src="Briany-Taveras.jpg" height="250px" style={{ borderRadius: "50%" }} />
+            <img src="Briany-Taveras.jpg" height="250px" style={{ borderRadius: "50%" }} alt="Briany Taveras" />
           </div>
            <div className="col-lg-7 order-lg-1 text-center my-5 mx-auto px-auto pb-6">
             <p className="h3 lead font-weight-bold">
@@ -307,7 +307,7 @@ const About = () => {
       <div className="container mb-5 ">
         <div className="row">
           <div className="col-log-5 text-center my-auto mx-auto">
-            <img src="Aransa-Garcia.jpg" height="250px" style={{ borderRadius: "50%" }} />
+            <img src="Aransa-Garcia.jpg" height="250px" style={{ borderRadius: "50%" }} alt="Aransa Garcia" />
           </div>
 
           <div className="col-lg-7 text-center my-5 mx-auto px-auto pb-6">
