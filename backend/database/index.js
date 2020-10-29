@@ -1,5 +1,5 @@
-require('dotenv').config()
-const pgp = require('pg-promise')({})
-const db = pgp(process.env.DATABASE_URL)
+require('dotenv').config();
+const pgp = require('pg-promise')({});
+const db = pgp(process.env.DATABASE_URL);
 
-module.exports = db
+module.exports = db;

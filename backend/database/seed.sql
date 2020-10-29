@@ -6,6 +6,6 @@ CREATE DATABASE vidaveloz;
 DROP TABLE IF EXISTS users;
 
 CREATE TABLE users(
-    id VARCHAR PRIMARY KEY,
-    email VARCHAR
+    id serial PRIMARY KEY,
+    email VARCHAR UNIQUE
 );
