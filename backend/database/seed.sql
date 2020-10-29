@@ -7,5 +7,5 @@ DROP TABLE IF EXISTS users;
 
 CREATE TABLE users(
     id serial PRIMARY KEY,
-    email VARCHAR
+    email VARCHAR UNIQUE
 );
