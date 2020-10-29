@@ -2,9 +2,9 @@ const db = require('../database/index')
 
 const createUser = async (req, res, next) => {
     try {
-        const { id, email } = req.body
+        const { email } = req.body
         let user = await db.one(
-            "INSERT INTO users VALUES ($1) RETURNING *",
+            "INSERT INTO users(email) VALUES ($1) RETURNING *",
             [email]
         );
         res.status(200).json({
@@ -14,8 +14,9 @@ const createUser = async (req, res, next) => {
 
         })
     } catch (err) {
-        res.json({
-            status: "error",
+        res.status(403)
+            .json({
+            status: "Error",
             message: "User Already Exists"
         })
         next(err);
