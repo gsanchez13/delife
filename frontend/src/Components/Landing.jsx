@@ -43,7 +43,7 @@ const Landing = () => {
     return (
         <div>
             <main role="main">
-                <div className="jumbotron text-light mb-0" style={{ "backgroundColor": "#F29900", "height": "50vh"}}>
+                <div className="jumbotron text-light mb-0" style={{ "backgroundColor": "#F29900"}}>
                     <div className="container">
                         <div className="text-center mx-auto">
                             <h1 className="display-3" style={{ "display": "inline" }}>V</h1>
