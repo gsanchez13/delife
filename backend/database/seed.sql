@@ -3,9 +3,9 @@ CREATE DATABASE vidaveloz;
 
 \c vidaveloz;
 
-DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS subscribers;
 
-CREATE TABLE users(
-    id serial PRIMARY KEY,
+CREATE TABLE subscribers(
+    id SERIAL PRIMARY KEY,
     email VARCHAR UNIQUE
 );
