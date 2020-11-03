@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const About = () => {
   function topFunction() {
@@ -325,6 +326,7 @@ const About = () => {
         </div>
         </section>
       </main>
+      <Footer/>
     </div>
   );
 };

@@ -7,14 +7,13 @@ import Footer from './Components/Footer';
 
 const App = () => {
   return (
-    <main role="main" style={{"fontFamily": "cormorantGaramond"}}>
+    <div style={{"fontFamily": "cormorantGaramond"}}>
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/about" component={About} />
       </Switch>
-      <Footer/>
-    </main>
+    </div>
   );
 }
 
