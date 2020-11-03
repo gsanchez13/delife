@@ -1,23 +1,23 @@
 const db = require('../database/index')
 
-const createUser = async (req, res, next) => {
+const createSubscriber = async (req, res, next) => {
     try {
         const { email } = req.body
-        let user = await db.one(
+        let subscriber = await db.one(
             "INSERT INTO subscribers(email) VALUES ($1) RETURNING *",
             [email]
         );
         res.status(200).json({
             status: "Success",
-            message: "User Created",
-            payload: user
+            message: "Subscriber Created",
+            payload: subscriber
 
         })
     } catch (err) {
         res.status(403)
             .json({
                 status: "Error",
-                message: "User Already Exists"
+                message: "Subscriber Already Exists"
             })
         next(err);
     }
@@ -43,4 +43,4 @@ const fetchAllSubscribers = async (req, res, next) => {
 
 
 
-module.exports = { createUser, fetchAllSubscribers }
+module.exports = { createSubscriber, fetchAllSubscribers }
