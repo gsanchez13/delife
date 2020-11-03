@@ -7,7 +7,7 @@ import Footer from './Components/Footer';
 
 const App = () => {
   return (
-    <div style={{"fontFamily": "cormorantGaramond"}}>
+    <div style={{"fontFamily": 'Cormorant Garamond'}}>
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route exact path="/contact" component={Contact} />
