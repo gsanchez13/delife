@@ -4,7 +4,7 @@ const createUser = async (req, res, next) => {
     try {
         const { email } = req.body
         let user = await db.one(
-            "INSERT INTO users(email) VALUES ($1) RETURNING *",
+            "INSERT INTO subscribers(email) VALUES ($1) RETURNING *",
             [email]
         );
         res.status(200).json({
@@ -16,27 +16,26 @@ const createUser = async (req, res, next) => {
     } catch (err) {
         res.status(403)
             .json({
-            status: "Error",
-            message: "User Already Exists"
-        })
+                status: "Error",
+                message: "User Already Exists"
+            })
         next(err);
-
     }
 }
 
-const fetchAllUsers = async (req, res, next) => {
+const fetchAllSubscribers = async (req, res, next) => {
     try {
-        const users = await db.any('SELECT * FROM users')
+        const subscribers = await db.any('SELECT * FROM subscribers')
         res.status(200).json({
             status: "Success",
-            message: "All Users",
-            payload: users
+            message: "All Subscribers",
+            payload: subscribers
 
         })
     } catch (err) {
         res.json({
-            status: "error",
-            message: "Failed to retrieve all users"
+            status: "Error",
+            message: "Failed to retrieve all users."
         })
         next(err);
     }
@@ -44,4 +43,4 @@ const fetchAllUsers = async (req, res, next) => {
 
 
 
-module.exports = { createUser, fetchAllUsers }
+module.exports = { createUser, fetchAllSubscribers }
