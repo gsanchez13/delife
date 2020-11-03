@@ -3,7 +3,6 @@ import { Switch, Route } from 'react-router-dom';
 import Landing from './Components/Landing';
 import About from './Components/About';
 import Contact from './Components/Contact';
-import Footer from './Components/Footer';
 
 const App = () => {
   return (
