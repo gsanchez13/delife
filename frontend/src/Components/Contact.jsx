@@ -12,14 +12,14 @@ const Contact = () => {
         xhr.open(form.method, form.action);
         xhr.setRequestHeader("Accept", "application/json");
         xhr.onreadystatechange = () => {
-          if (xhr.readyState !== XMLHttpRequest.DONE) return;
-          if (xhr.status === 200) {
-            form.reset();
-            setStatus("SUCCESS")
-          } else {
-            setStatus("ERROR")
-          }
-         
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                form.reset();
+                setStatus("SUCCESS")
+            } else {
+                setStatus("ERROR")
+            }
+
         };
         xhr.send(data);
     }
@@ -37,18 +37,23 @@ const Contact = () => {
                         </h3>
 
                         <form
+                            className="form-group"
                             onSubmit={submitForm}
                             action="https://formspree.io/f/xwkwbwnd"
                             method="POST"
                         >
-                             <label>Email:
-                            <input type="email" name="email" />
-                            </label>
+                            <div className="form-group">
+                                <label>Email:
+                            <input type="email" name="email" className="form-control" />
+                                </label>
+                            </div>
 
-                            <label>Message:
-                            <input type="text" name="message" />
-                            </label>
-                            {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+                            <div className="form-group">
+                                <label>Message:
+                            <textarea className="form-control" name="message" rows="3"></textarea>
+                                </label>
+                            </div>
+                            {status === "SUCCESS" ? <p>Thanks!</p> : <button className="btn btn-dark">Submit</button>}
                             {status === "ERROR" && <p>Ooops! There was an error.</p>}
                         </form>
                     </div>
