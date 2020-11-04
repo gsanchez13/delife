@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import Footer from './Footer';
+// import axios from 'axios';
 
 const Landing = () => {
     let [email, setEmail] = useState({
@@ -42,7 +43,7 @@ const Landing = () => {
     return (
         <div>
             <main role="main">
-                <div className="jumbotron text-light mb-0" style={{ "backgroundColor": "#F29900" }}>
+                <div className="jumbotron text-light mb-0" style={{ "backgroundColor": "#F29900"}}>
                     <div className="container">
                         <div className="text-center mx-auto">
                             <h1 className="display-3" style={{ "display": "inline" }}>V</h1>
@@ -76,7 +77,7 @@ const Landing = () => {
                             </em>
                         </h1>
                     </div>
-                    <div className="col-lg-6 py-5 px-5 pl-3 text-center" style={{ "backgroundColor": "#EFDDD0" }}>
+                    <div className="col-lg-6 py-5 px-auto pl-3" style={{ "backgroundColor": "#EFDDD0" }}>
                         <em>Vida Veloz </em>helps you find and order clothes, beauty products, and everyday essentials near you. <br />
                         How it works: You share your location or type in your zipcode, we tell you the stores near you that deliver to your address. When you find what you're looking for, you can place your order online and we’ll make sure you receive your order by the end of the day.
                     </div>
@@ -123,6 +124,7 @@ const Landing = () => {
                     </div>
                 </div>
             </main>
+            <Footer/>
         </div >
     )
 };
