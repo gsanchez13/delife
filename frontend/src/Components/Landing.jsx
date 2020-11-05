@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Footer from './Footer';
 import axios from 'axios';
+import { apiURL } from '../util/apiURL'
 
 const Landing = () => {
+    const API = apiURL()
     let [email, setEmail] = useState({
         emailStr: "",
         emailValid: null
@@ -15,7 +17,7 @@ const Landing = () => {
         if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email.emailStr)) {
             setEmail({ ...email, emailValid: true });
             console.log(email.emailStr)
-            let response = await axios.post('/api/subscribers', {
+            let response = await axios.post(`${API}/api/subscribers`, {
                 'email': email.emailStr
             });
             console.log(response)
