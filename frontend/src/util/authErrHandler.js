@@ -14,4 +14,4 @@ export const authErrorHandler = (error, email, password, updateState) => {
     } else {
         updateState(error.message);
     }
-}
+};
