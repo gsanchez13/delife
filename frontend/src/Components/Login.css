@@ -42,9 +42,10 @@
     align-items: center;
 }
 
-.signup-link{
+.register-link{
     display: contents;
     text-decoration: underline;
+    padding-left: 5px;
 }
 
 .signup-google{
@@ -57,3 +58,16 @@
     display: flex;
     text-align: center;
 }
+
+.btn-primary,.btn-primary:active, .btn-primary:link, .btn-primary:focus{
+    color: #fff;
+    background-color: #f29900;;
+    border-color: #f29900;;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #f2990075;;
+    border-color: #f2990075;;
+}
+
