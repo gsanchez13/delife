@@ -1,0 +1,66 @@
+.signup-form{
+    width: 25rem;
+    align-self: center;    
+}
+
+.signup-right-container{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+}
+.signup-right{
+    /* background-color: #EFDDD0; */
+    display: flex;
+    justify-content: center;
+}
+
+.bi-lock, .svg-icon{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.svg-icon{
+    width: 20px;
+}
+
+.btn{
+    display: flex;
+    margin-left: auto;
+}
+
+.signup-main{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 100vh;
+}
+
+.signup-left{
+    background-color: #f29900;
+    display: flex;
+    align-items: center;
+}
+
+.login-link{
+    display: contents;
+    text-decoration: underline;
+}
+
+.signup-google{
+    margin: 25px 0px;
+}
+
+.signup-slogan{
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #f29900;;
+    border-color: #f29900;;
+}
