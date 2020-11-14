@@ -2,6 +2,7 @@ const express = require("express")
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const subscriberRouter = require('./routes/subscribers')
+const userRouter = require('./routes/users')
 
 require("dotenv").config()
 
@@ -13,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.use('/api/subscribers/', subscriberRouter)
+app.use('/api/users/', userRouter)
 
 app.use((err, req, res, next) => {
     console.log(err);
