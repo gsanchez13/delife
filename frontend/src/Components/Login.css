@@ -1,9 +1,18 @@
-.login{
+.login-form{
     width: 25rem;
+    align-self: center;    
+}
+
+.login-right-container{
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-self: center;
+}
+.login-right{
+    /* background-color: #EFDDD0; */
+    display: flex;
+    justify-content: center;
 }
 
 .bi-lock, .svg-icon{
@@ -21,20 +30,30 @@
     margin-left: auto;
 }
 
-
-.login-container{
+.login-main{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     height: 100vh;
 }
 
 .login-left{
-    background-color: #C44B3C;
+    background-color: #f29900;
+    display: flex;
+    align-items: center;
 }
+
 .signup-link{
     display: contents;
     text-decoration: underline;
 }
+
 .signup-google{
     margin: 25px 0px;
+}
+
+.login-slogan{
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
 }
