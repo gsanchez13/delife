@@ -1,15 +1,15 @@
-.login-form{
+.signup-form{
     width: 25rem;
     align-self: center;    
 }
 
-.login-right-container{
+.signup-right-container{
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-self: center;
 }
-.login-right{
+.signup-right{
     /* background-color: #EFDDD0; */
     display: flex;
     justify-content: center;
@@ -30,29 +30,28 @@
     margin-left: auto;
 }
 
-.login-main{
+.signup-main{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     height: 100vh;
 }
 
-.login-left{
+.signup-left{
     background-color: #f29900;
     display: flex;
     align-items: center;
 }
 
-.register-link{
+.login-link{
     display: contents;
     text-decoration: underline;
-    padding-left: 5px;
 }
 
 .signup-google{
     margin: 25px 0px;
 }
 
-.login-slogan{
+.signup-slogan{
     color: white;
     text-transform: uppercase;
     display: flex;
@@ -70,4 +69,3 @@
     background-color: #f2990075;;
     border-color: #f2990075;;
 }
-
