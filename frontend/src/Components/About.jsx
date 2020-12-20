@@ -3,48 +3,51 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 
 const About = () => {
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    console.log("button clicked");
-  }
+  // function topFunction() {
+  //   document.body.scrollTop = 0; // For Safari
+  //   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  //   console.log("button clicked");
+  // }
+
+
   return (
-    <div className="main">
+    <div className="main" style ={{height: 'vh100'}}>
       <main>
       <div className="navigation-Bar">
-        <nav className="navbar navbar-light bg-light" style={{ opacity: ".9" }}>
-          <button onClick={topFunction} style={{ border: "none" }}>
+        <nav className="navbar navbar-expand navbar-light-fixed-top bg-light " style={{ opacity: ".9" }}>
+          {/* <button onClick={topFunction} style={{ border: "none" }}> */}
+            <Link to ='/'>
             <img
               src="/OrangeIcon.png"
               width="30"
               height="30"
               class="d-inline-block align-top"
               alt="An orange."
-              onClick={topFunction}
             />
-          </button>
+            </Link>
+          {/* </button> */}
         </nav>
       </div>
 
       <div
         className="jumbotron"
         style={{
-          backgroundColor: "#F29900",
+          backgroundColor: "#EFDDD0",
           color: "white",
           marginBottom: "0px",
-          height:'400px'
+          // height:'400px'
         }}
       >
         <div className="container" styl={{ marginBotttom: "0px" }}>
           <h1
             className="display-3 text-center"
-            style={{ fontFamily: "Baskervville", fontSize: "100px" }}
+            style={{ fontFamily: "Baskervville", fontSize: "100px", color:'#F29900' }}
           >
             Vida Veloz
           </h1>
           <h4
             className="display-5 font-weight-light text-center"
-            style={{ fontFamily: "Baskervville" }}
+            style={{ fontFamily: "Baskervville", color:'#F29900'  }}
           >
             <em>About us</em>
           </h4>
