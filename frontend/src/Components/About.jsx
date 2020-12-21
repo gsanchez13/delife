@@ -35,13 +35,13 @@ const About = () => {
           backgroundColor: "#EFDDD0",
           color: "white",
           marginBottom: "0px",
-          // height:'400px'
+          height:'350px'
         }}
       >
         <div className="container" styl={{ marginBotttom: "0px" }}>
           <h1
             className="display-3 text-center"
-            style={{ fontFamily: "Baskervville", fontSize: "100px", color:'#F29900' }}
+            style={{ fontFamily: "Baskervville", fontSize: "100px", fontStyle: 'italic', color:'#F29900' }}
           >
             Vida Veloz
           </h1>
